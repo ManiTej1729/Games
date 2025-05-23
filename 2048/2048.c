@@ -186,7 +186,6 @@ int find_non_empty_rev(char board[][100], int flag, int index, int start) {
 
 void shift_left(char (*board)[100]) {
     int ptr1 = -1, ptr2 = 0;
-    int score = 0;
     for (int i = 0; i < 4; i++) {
         while (1) {
             ptr1 = find_empty(board, 1, i);
@@ -201,7 +200,6 @@ void shift_left(char (*board)[100]) {
 
 void shift_up(char (*board)[100]) {
     int ptr1 = -1, ptr2 = 0;
-    int score = 0;
     for (int i = 0; i < 4; i++) {
         while (1) {
             ptr1 = find_empty(board, 0, i);
@@ -216,7 +214,6 @@ void shift_up(char (*board)[100]) {
 
 void shift_right(char (*board)[100]) {
     int ptr1 = -1, ptr2 = 0;
-    int score = 0;
     for (int i = 0; i < 4; i++) {
         while (1) {
             ptr1 = find_empty_rev(board, 1, i);
@@ -231,7 +228,6 @@ void shift_right(char (*board)[100]) {
 
 void shift_down(char (*board)[100]) {
     int ptr1 = -1, ptr2 = 0;
-    int score = 0;
     for (int i = 0; i < 4; i++) {
         while (1) {
             ptr1 = find_empty_rev(board, 0, i);

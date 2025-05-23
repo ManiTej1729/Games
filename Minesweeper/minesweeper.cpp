@@ -100,8 +100,6 @@ void initialise_mines(vector <vector <char> > &board, int num_of_mines, vector <
     do {
         random_device rd;
         mt19937 gen(rd());
-        int upper_bound_row = up_row;
-        int upper_bound_col = up_col;
         uniform_int_distribution<int> distribution_row(0, up_row - 1);
         uniform_int_distribution<int> distribution_col(0, up_col - 1);
         int random_row = distribution_row(gen);

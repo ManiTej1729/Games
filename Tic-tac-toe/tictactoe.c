@@ -283,7 +283,6 @@ int main() {
     int cheater[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
     int flag_for_safe_play = 0;
     int *ptr = &flag_for_safe_play;
-    int flag_for_intersection = 0;
     int flag_for_fir_inp = 0;
     int flag_for_fir_inp_cen = 0;
     int flag_for_fir_inp_mid = 0;
@@ -295,6 +294,7 @@ int main() {
     int storage = 0;
     int corner_array[] = {1, 3, 7, 9};
     int mid_array[] = {2, 4, 6, 8};
+    printf("Player 1 or 2(type 1 or 2): ");
     scanf("%d", &player);
     system("clear");
     if (player == 1) {
@@ -353,7 +353,6 @@ int main() {
                 else {
                     update_board(board, genereate_intersection(storage, O), 'X');
                     cheater[genereate_intersection(storage, O) - 1] = genereate_intersection(storage, O);
-                    flag_for_intersection = 1;
                 }
             }
         }
@@ -617,7 +616,7 @@ int main() {
             system("clear");
         }
     }
-    else if (player != 1 || player != 2) {
+    else if (player != 1 && player != 2) {
         printf("Enter a valid player number\n");
     }
 
