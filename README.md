@@ -135,7 +135,7 @@ Each game directory contains its own Makefile (except Wordle) and README with sp
 
 To clean all compiled executables at once:
 
-```
+```bash
 find . -name "Makefile" -execdir make clean \;
 ```
 
