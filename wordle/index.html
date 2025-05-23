@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js" integrity="sha512-docBEeq28CCaXCXN7cINkyQs0pRszdQsVBFWUd+pLNlEk3LDlSDDtN7i1H+nTB8tshJPQHS0yu0GW9YGFd/CRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://rawcdn.githack.com/maheshmurag/bjspell/master/BJSpell.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wordle">
+        <div class="grid">
+            <!-- Grid cells -->
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
+            <div class="cell" id="9"></div>
+            <div class="cell" id="10"></div>
+            <div class="cell" id="11"></div>
+            <div class="cell" id="12"></div>
+            <div class="cell" id="13"></div>
+            <div class="cell" id="14"></div>
+            <div class="cell" id="15"></div>
+            <div class="cell" id="16"></div>
+            <div class="cell" id="17"></div>
+            <div class="cell" id="18"></div>
+            <div class="cell" id="19"></div>
+            <div class="cell" id="20"></div>
+            <div class="cell" id="21"></div>
+            <div class="cell" id="22"></div>
+            <div class="cell" id="23"></div>
+            <div class="cell" id="24"></div>
+            <div class="cell" id="25"></div>
+            <div class="cell" id="26"></div>
+            <div class="cell" id="27"></div>
+            <div class="cell" id="28"></div>
+            <div class="cell" id="29"></div>
+            <div class="cell" id="30"></div>
+            <!-- Repeat for the other cells -->
+        </div>
+    </div>
+    <div class="struggle">
+        <div class="keyboard" style="padding-left: 50px;">
+            <!-- First row -->
+            <div class="keyboard row1">
+                <button class="key">Q</button>
+                <button class="key">W</button>
+                <button class="key">E</button>
+                <button class="key">R</button>
+                <button class="key">T</button>
+                <button class="key">Y</button>
+                <button class="key">U</button>
+                <button class="key">I</button>
+                <button class="key">O</button>
+                <button class="key">P</button>
+            </div>
+            <!-- Second row -->
+            <div class="keyboard row2">
+                <button class="key">A</button>
+                <button class="key">S</button>
+                <button class="key">D</button>
+                <button class="key">F</button>
+                <button class="key">G</button>
+                <button class="key">H</button>
+                <button class="key">J</button>
+                <button class="key">K</button>
+                <button class="key">L</button>
+                <button class="key bksp">Bksp</button>
+            </div>
+            <!-- Third row -->
+            <div class="keyboard row3">
+                <button class="key">Z</button>
+                <button class="key">X</button>
+                <button class="key">C</button>
+                <button class="key">V</button>
+                <button class="key">B</button>
+                <button class="key">N</button>
+                <button class="key">M</button>
+                <button class="key clear">Clear</button>
+                <button class="key enter">Enter</button>
+            </div>
+        </div>
+    </div>
+    <!-- <button onclick="print()">Test</button> -->
+    <button onclick="Reveal()" class="giveup">Give Up</button>
+</body>
+</html>
